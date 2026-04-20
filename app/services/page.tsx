@@ -311,7 +311,7 @@ export default function ServicesPage() {
               </AnimatedSection>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                {memberships.map((m, i) => (
+                {memberships.map((m) => (
                   <div key={m.name} className="luxury-card relative overflow-hidden p-6 flex flex-col items-center text-center group">
                     <span className="absolute top-0 left-0 w-4 h-4">
                       <span className="absolute top-0 left-0 w-full h-px bg-[#c9a84c]" />

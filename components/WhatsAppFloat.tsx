@@ -1,7 +1,7 @@
 "use client";
 
 export default function WhatsAppFloat() {
-  const number = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "91XXXXXXXXXX";
+  const number = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919209219328";
   const message = encodeURIComponent(
     "Hi Maifair! I'd like to enquire about your services."
   );
