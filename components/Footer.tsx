@@ -179,13 +179,24 @@ export default function Footer() {
         <div className="mt-12 mb-6 h-px bg-gradient-to-r from-transparent via-[rgba(201,168,76,0.3)] to-transparent" />
 
         {/* Bottom bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[rgba(212,201,184,0.6)]">
-          <p>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[rgba(212,201,184,0.6)]">
+          <p className="order-2 md:order-1">
             © {new Date().getFullYear()}{" "}
-            <span className="text-[#c9a84c]">Maifair</span> — The Luxurious Spa. All rights
+            <span className="text-[#c9a84c]">Maifair</span> — The Luxurious Spa.<br className="hidden md:block lg:hidden" /> All rights
             reserved.
           </p>
-          <div className="flex items-center gap-5">
+          <p className="order-1 md:order-2 text-center">
+            made with ❤️ by{" "}
+            <a
+              href="https://quickfusioninnovations.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-[#c9a84c] transition-colors font-medium"
+            >
+              quick fusion innovations
+            </a>
+          </p>
+          <div className="flex items-center gap-5 order-3">
             <Link href="/privacy" className="hover:text-[#c9a84c] transition-colors">
               Privacy Policy
             </Link>
