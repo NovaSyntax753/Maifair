@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Check, ChevronDown, ChevronUp, Gem } from "lucide-react";
+import { Gem, ChevronDown, ChevronUp } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const tiers = [
