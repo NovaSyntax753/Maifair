@@ -3,62 +3,44 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Check, ChevronDown, ChevronUp } from "lucide-react";
+import { Check, ChevronDown, ChevronUp, Gem } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const tiers = [
   {
     id: "silver",
     name: "Silver",
-    tagline: "Begin Your Journey",
-    price: "₹4,999",
-    period: "/month",
+    price: "₹10,000",
+    value: "₹11,500",
     popular: false,
-    benefits: [
-      "2 x 60-min Body Massage per month",
-      "1 x Facial Treatment per month",
-      "10% off all additional services",
-      "Priority booking slots",
-      "Welcome gift bag",
-      "Access to relaxation lounge",
-    ],
   },
   {
     id: "gold",
     name: "Gold",
-    tagline: "The Quintessential Choice",
-    price: "₹8,999",
-    period: "/month",
+    price: "₹20,000",
+    value: "₹22,500",
+    popular: false,
+  },
+  {
+    id: "diamond",
+    name: "Diamond",
+    price: "₹30,000",
+    value: "₹35,000",
     popular: true,
-    benefits: [
-      "4 x 90-min treatments of choice",
-      "2 x Premium Facial Treatments",
-      "1 x Aromatherapy per month",
-      "20% off all additional services",
-      "Complimentary birthday ritual",
-      "Dedicated therapist assignment",
-      "Exclusive members-only events",
-      "Premium product gifting quarterly",
-    ],
   },
   {
     id: "platinum",
     name: "Platinum",
-    tagline: "Unparalleled Privilege",
-    price: "₹16,999",
-    period: "/month",
+    price: "₹50,000",
+    value: "₹60,000",
     popular: false,
-    benefits: [
-      "Unlimited 60-min treatments",
-      "6 x Premium specialty sessions",
-      "Monthly couple's ritual included",
-      "30% off all additional services",
-      "Concierge booking service",
-      "Annual Bridal/Special ritual",
-      "Exclusive Platinum lounge access",
-      "Quarterly luxury gift hamper",
-      "Personal wellness consultation",
-    ],
+  },
+  {
+    id: "vip",
+    name: "VIP",
+    price: "₹1,00,000",
+    value: "₹1,25,000",
+    popular: false,
   },
 ];
 
@@ -93,7 +75,7 @@ export default function MembershipsPage() {
       <section className="relative h-[50vh] min-h-[360px] flex items-end pb-16 grain-overlay overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://picsum.photos/seed/membership-hero/1920/1080"
+            src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1920&q=80"
             alt="Maifair membership"
             fill
             className="object-cover"
@@ -129,57 +111,45 @@ export default function MembershipsPage() {
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 items-start">
             {tiers.map((tier, i) => (
               <AnimatedSection key={tier.id} delay={i * 0.12}>
                 <div
                   id={`membership-card-${tier.id}`}
-                  className={`luxury-card relative p-8 flex flex-col gap-6 ${
+                  className={`luxury-card relative p-6 flex flex-col gap-5 ${
                     tier.popular ? "pricing-card-popular" : ""
                   }`}
                 >
                   {tier.popular && (
-                    <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#c9a84c] text-[#0a0a0a] text-[0.6rem] font-bold tracking-[0.2em] uppercase px-5 py-1.5">
+                    <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#c9a84c] text-[#0a0a0a] text-[0.55rem] font-bold tracking-[0.2em] uppercase px-4 py-1.5 whitespace-nowrap z-10">
                       Most Popular
                     </div>
                   )}
 
-                  <div className="text-center space-y-2">
+                  <div className="text-center space-y-2 pt-2">
+                    <span className="block mb-3">
+                      <Gem size={24} className="text-[#c9a84c] mx-auto" />
+                    </span>
                     <span
-                      className="block font-display text-3xl font-light text-[#c9a84c]"
+                      className="block font-display text-2xl font-light text-[#f5f0e8]"
                       style={{ fontFamily: "var(--font-cormorant)" }}
                     >
                       {tier.name}
                     </span>
-                    <span className="gold-divider" />
-                    <p className="text-xs text-[#d4c9b8] tracking-[0.12em] uppercase">
-                      {tier.tagline}
-                    </p>
+                    <span className="gold-divider mb-3" />
                   </div>
 
-                  <div className="text-center">
-                    <span
-                      className="font-display text-5xl font-light text-[#f5f0e8]"
-                      style={{ fontFamily: "var(--font-cormorant)" }}
-                    >
-                      {tier.price}
-                    </span>
-                    <span className="text-sm text-[#d4c9b8] font-light">{tier.period}</span>
+                  <div className="text-center flex-1">
+                    <div className="flex flex-col gap-2 text-sm font-light">
+                      <span className="text-[#d4c9b8]">Pay: <strong className="text-white font-medium text-base">{tier.price}</strong></span>
+                      <span className="text-[#c9a84c]">Get: <strong className="font-medium">{tier.value} Massage</strong></span>
+                    </div>
                   </div>
-
-                  <ul className="space-y-3 flex-1">
-                    {tier.benefits.map((b) => (
-                      <li key={b} className="flex items-start gap-3 text-sm text-[#d4c9b8] font-light">
-                        <Check size={14} className="text-[#c9a84c] mt-0.5 shrink-0" />
-                        {b}
-                      </li>
-                    ))}
-                  </ul>
 
                   <Link
                     href={`/booking?service=Membership - ${tier.name}`}
                     id={`join-${tier.id}`}
-                    className={`text-center ${tier.popular ? "btn-gold" : "btn-outline-gold"} w-full`}
+                    className={`text-center ${tier.popular ? "btn-gold" : "btn-outline-gold"} w-full py-3 text-xs mt-2`}
                   >
                     Join {tier.name}
                   </Link>
@@ -274,7 +244,9 @@ export default function MembershipsPage() {
                 <option value="">Preferred Membership Tier…</option>
                 <option>Silver</option>
                 <option>Gold</option>
+                <option>Diamond</option>
                 <option>Platinum</option>
+                <option>VIP</option>
               </select>
               <textarea
                 id="membership-message"

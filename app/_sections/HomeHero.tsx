@@ -15,7 +15,7 @@ export default function HomeHero() {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
-        poster="https://picsum.photos/1920/1080?grayscale&blur=2"
+        poster="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=1920&q=80"
       />
 
       {/* Overlay */}

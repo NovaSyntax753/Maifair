@@ -43,7 +43,7 @@ export default function ContactPage() {
       <section className="relative h-[50vh] min-h-[360px] flex items-end pb-16 grain-overlay overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://picsum.photos/seed/contact-hero/1920/1080"
+            src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1920&q=80"
             alt="Contact Maifair"
             fill
             className="object-cover"
@@ -119,7 +119,7 @@ export default function ContactPage() {
               <div className="relative aspect-video border border-[rgba(201,168,76,0.2)] overflow-hidden">
                 <iframe
                   title="Maifair location map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60347.33534195028!2d72.79661!3d19.05966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8866a456c9f%3A0x4c6c3e0f90000001!2sBandra%20West%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1700000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.6!2d79.0882!3d21.1458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0f7a29baaf9%3A0xa9e7a9f7b4d25d18!2sShankar%20Nagar%2C%20Nagpur%2C%20Maharashtra%20440010!5e0!3m2!1sen!2sin!4v1700000000000"
                   className="w-full h-full grayscale"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

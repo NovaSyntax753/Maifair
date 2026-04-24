@@ -16,6 +16,11 @@ const SERVICES = [
   "Bridal Package",
   "Hair Spa",
   "Foot Reflexology",
+  "Membership - Silver",
+  "Membership - Gold",
+  "Membership - Diamond",
+  "Membership - Platinum",
+  "Membership - VIP",
 ];
 
 const TIME_SLOTS = ["10:00 AM", "12:00 PM", "2:00 PM", "4:00 PM", "6:00 PM"];

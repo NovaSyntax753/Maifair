@@ -52,7 +52,7 @@ export default function AboutPage() {
       <section className="relative h-[60vh] min-h-[400px] flex items-end pb-16 grain-overlay overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://picsum.photos/seed/maifair-about-hero/1920/1080"
+            src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1920&q=80"
             alt="Maifair spa ambiance"
             fill
             className="object-cover"
@@ -79,7 +79,7 @@ export default function AboutPage() {
             <AnimatedSection direction="left">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src="https://picsum.photos/seed/maifair-story/800/1000"
+                  src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80"
                   alt="Maifair founding story"
                   fill
                   className="object-cover"
@@ -193,7 +193,12 @@ export default function AboutPage() {
               <AnimatedSection key={member.name} delay={i * 0.1} className="group text-center">
                 <div className="relative aspect-[3/4] overflow-hidden mb-5">
                   <Image
-                    src={`https://picsum.photos/seed/${member.seed}/600/800`}
+                    src={[
+                      "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80",
+                      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80",
+                      "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80",
+                      "https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=600&q=80",
+                    ][i]}
                     alt={member.name}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -239,7 +244,7 @@ export default function AboutPage() {
                 controls
                 preload="none"
                 className="w-full h-full object-cover"
-                poster="https://picsum.photos/seed/maifair-about-video/1600/900?grayscale&blur=1"
+                poster="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600&q=80"
               />
             </div>
           </AnimatedSection>

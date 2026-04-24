@@ -198,7 +198,7 @@ export default function ServicesPage() {
       <section className="relative h-[50vh] min-h-[360px] flex items-end pb-16 grain-overlay overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://picsum.photos/seed/maifair-services-hero/1920/1080"
+            src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=1920&q=80"
             alt="Maifair spa services"
             fill
             className="object-cover"

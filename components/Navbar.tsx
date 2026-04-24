@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
@@ -45,14 +46,21 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex flex-col items-start group" id="nav-logo">
+          <Link href="/" className="flex items-center group" id="nav-logo">
+            <Image
+              src="/logo.png"
+              alt="Maifair Spa Logo"
+              width={48}
+              height={48}
+              className="object-contain mix-blend-screen"
+              priority
+            />
             <span
-              className="font-display text-2xl font-light tracking-[0.25em] text-[#c9a84c] uppercase leading-none"
+              className="ml-2 font-display text-2xl font-light tracking-[0.25em] text-[#c9a84c] uppercase leading-none"
               style={{ fontFamily: "var(--font-cormorant)" }}
             >
               MAIFAIR
             </span>
-            <span className="gold-divider gold-divider-left w-full mt-1 opacity-80" />
           </Link>
 
           {/* Desktop Nav Links */}
@@ -98,12 +106,21 @@ export default function Navbar() {
       >
         {/* Close button */}
         <div className="flex justify-between items-center px-6 py-5">
-          <span
-            className="font-display text-2xl font-light tracking-[0.25em] text-[#c9a84c] uppercase"
-            style={{ fontFamily: "var(--font-cormorant)" }}
-          >
-            MAIFAIR
-          </span>
+          <div className="flex items-center gap-2">
+            <Image
+              src="/logo.png"
+              alt="Maifair Spa Logo"
+              width={40}
+              height={40}
+              className="object-contain mix-blend-screen"
+            />
+            <span
+              className="font-display text-2xl font-light tracking-[0.25em] text-[#c9a84c] uppercase"
+              style={{ fontFamily: "var(--font-cormorant)" }}
+            >
+              MAIFAIR
+            </span>
+          </div>
           <button
             id="nav-close"
             onClick={() => setMenuOpen(false)}

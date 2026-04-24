@@ -5,11 +5,11 @@ import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const images = [
-  { seed: "spa-gallery-1", label: "Ambiance" },
-  { seed: "spa-gallery-2", label: "Treatments" },
-  { seed: "spa-gallery-3", label: "Interiors" },
-  { seed: "spa-gallery-4", label: "Wellness" },
-  { seed: "spa-gallery-5", label: "Rituals" },
+  { src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80", label: "Ambiance" },
+  { src: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=600&q=80", label: "Treatments" },
+  { src: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80", label: "Interiors" },
+  { src: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80", label: "Wellness" },
+  { src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80", label: "Rituals" },
 ];
 
 export default function HomeGalleryStrip() {
@@ -34,15 +34,15 @@ export default function HomeGalleryStrip() {
 
         {/* Gallery strip */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-          {images.map(({ seed, label }, i) => (
+          {images.map(({ src, label }, i) => (
             <AnimatedSection
-              key={seed}
+              key={label}
               delay={i * 0.08}
               className={`relative overflow-hidden group ${i === 2 ? "md:row-span-1" : ""}`}
             >
               <div className={`relative overflow-hidden ${i === 0 || i === 4 ? "aspect-[3/4]" : "aspect-square"}`}>
                 <Image
-                  src={`https://picsum.photos/seed/${seed}/600/800`}
+                  src={src}
                   alt={label}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
