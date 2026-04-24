@@ -17,6 +17,7 @@ const premiumMassages = [
     description: "Dry massage has gained popularity for its unique approach to relaxation and rejuvenation without the use of oils or lotions.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹4,000",
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800",
   },
   {
     icon: <Sparkles size={28} />,
@@ -24,6 +25,7 @@ const premiumMassages = [
     description: "Designed for active individuals, focusing on preventing and treating injury, enhancing athletic performance, and reducing muscle fatigue.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹4,000",
+    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800",
   },
   {
     icon: <Users size={28} />,
@@ -31,6 +33,7 @@ const premiumMassages = [
     description: "When two therapist and four hands hit your body your mind reacts differently you can selecet any therapy and experience two full body massage at the same time. It fulls stressed skins to more serene state with relaxing & rejuvenating massage modalities.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹5,000",
+    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=800",
   },
   {
     icon: <Scissors size={28} />,
@@ -38,6 +41,7 @@ const premiumMassages = [
     description: "A deeply purifying and detoxifying Turkish bath ritual that includes rigorous exfoliation, soothing foam massage, and a renewed radiance.",
     duration: "90 min",
     priceFrom: "₹5,500",
+    image: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=800",
   },
   {
     icon: <Flame size={28} />,
@@ -45,6 +49,7 @@ const premiumMassages = [
     description: "A traditional therapy using heated herbal pouches to alleviate pain, improve circulation, and deeply relax tense muscles.",
     duration: "90 min",
     priceFrom: "₹6,000",
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800",
   },
   {
     icon: <Flame size={28} />,
@@ -52,6 +57,7 @@ const premiumMassages = [
     description: "Smooth, heated stones are placed on specific points of your body to promote deep muscle relaxation and ease tension.",
     duration: "90 min",
     priceFrom: "₹7,000",
+    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800",
   },
   {
     icon: <Target size={28} />,
@@ -59,6 +65,7 @@ const premiumMassages = [
     description: "Our exclusive full-body treatment combining exfoliation (Scrub), therapeutic massages (Swedish + Deep Tissue), and a nourishing Wrap.",
     duration: "90 min",
     priceFrom: "₹7,000",
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800",
   },
   {
     icon: <Waves size={28} />,
@@ -66,6 +73,7 @@ const premiumMassages = [
     description: "Immerse yourself in our private Jacuzzi to soothe tired muscles, improve circulation, and experience complete relaxation.",
     duration: "90 / 120 min",
     priceFrom: "₹9,500",
+    image: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=800",
   },
 ];
 
@@ -76,6 +84,7 @@ const basicTherapies = [
     description: "Lomi Lomi (or LomiLomi) massage is an integrative massage practice that began in ancient hawaii and is gaining popularity around the world.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹2,500",
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800",
   },
   {
     icon: <Droplets size={28} />,
@@ -83,6 +92,7 @@ const basicTherapies = [
     description: "A holistic healing treatment that uses natural plant extracts to promote health and well-being, enhancing both physical and emotional health.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹3,000",
+    image: "https://images.unsplash.com/photo-1608280731043-f1a54045a163?q=80&w=800",
   },
   {
     icon: <Heart size={28} />,
@@ -90,6 +100,7 @@ const basicTherapies = [
     description: "Swedish massage involves long, kneading strokes combined with rhythmic tapping strokes and movement of the joints.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹3,500",
+    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800",
   },
   {
     icon: <Sparkles size={28} />,
@@ -97,6 +108,7 @@ const basicTherapies = [
     description: "Balinese massage is an approach to massage developed in the Indonesian province of Bali, With influence from the traditional medicine systems of India, China, and Southeast Asia.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹3,500",
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800",
   },
   {
     icon: <Target size={28} />,
@@ -104,6 +116,7 @@ const basicTherapies = [
     description: "Deep tissue massage is a massage technique that's mainly used to treat musculoskeletal issues, such as strains and sports injuries.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹4,000",
+    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=800",
   },
 ];
 
@@ -114,6 +127,7 @@ const focusMassages = [
     description: "A targeted massage that relieves tension in the head, neck, and shoulders, perfect for alleviating stress and headaches.",
     duration: "30 / 45 min",
     priceFrom: "₹1,000",
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800",
   },
   {
     icon: <Footprints size={28} />,
@@ -121,6 +135,7 @@ const focusMassages = [
     description: "Focused pressure-point therapy applied to reflex zones of the feet to relieve stress, improve circulation, and balance the body's energy systems.",
     duration: "30 / 45 min",
     priceFrom: "₹1,000",
+    image: "https://images.unsplash.com/photo-1519415510236-718bdfcd89c5?q=80&w=800",
   },
   {
     icon: <Target size={28} />,
@@ -128,6 +143,7 @@ const focusMassages = [
     description: "Concentrated care for your neck and back to dissolve knots, ease chronic tension, and restore mobility.",
     duration: "30 / 45 min",
     priceFrom: "₹1,200",
+    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=800",
   },
 ];
 
@@ -138,6 +154,7 @@ const skinCare = [
     description: "A complete skin care lifestyle treatment including Scrub, Lomi Lomi Massage, and a nourishing Wrap.",
     duration: "90 min",
     priceFrom: "₹4,000",
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800",
   },
   {
     icon: <Droplets size={28} />,
@@ -145,6 +162,7 @@ const skinCare = [
     description: "Indulge your skin with our chocolate therapy including Deep Tissue Massage and body Polish.",
     duration: "90 min",
     priceFrom: "₹5,000",
+    image: "https://images.unsplash.com/photo-1526413232644-8a40f4110b46?q=80&w=800",
   },
   {
     icon: <Wind size={28} />,
@@ -152,6 +170,7 @@ const skinCare = [
     description: "The ultimate skin renewal package featuring a full body Scrub, Deep Tissue massage, and Wrap.",
     duration: "90 min",
     priceFrom: "₹5,500",
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800",
   },
   {
     icon: <Gem size={28} />,
@@ -159,6 +178,7 @@ const skinCare = [
     description: "Our signature Swedish experience combining body polish, traditional Swedish Massage, and a Wrap.",
     duration: "90 min",
     priceFrom: "₹6,000",
+    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800",
   },
   {
     icon: <Waves size={28} />,
@@ -166,6 +186,7 @@ const skinCare = [
     description: "Signature Lomi Lomi massage with soothing body balm and a detoxifying marine mud wrap.",
     duration: "90 min",
     priceFrom: "₹6,500",
+    image: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=800",
   },
   {
     icon: <Target size={28} />,
@@ -173,6 +194,7 @@ const skinCare = [
     description: "An exotic Indonesian retreat for your skin, featuring an exfoliating scrub, Swedish massage, and Wrap.",
     duration: "90 min",
     priceFrom: "₹7,000",
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800",
   },
   {
     icon: <Heart size={28} />,
@@ -180,6 +202,7 @@ const skinCare = [
     description: "Melt away travel fatigue with a revitalizing scrub, Balinese massage, and a restorative Wrap.",
     duration: "90 min",
     priceFrom: "₹7,000",
+    image: "https://images.unsplash.com/photo-1608280731043-f1a54045a163?q=80&w=800",
   },
 ];
 
