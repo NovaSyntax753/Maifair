@@ -119,6 +119,7 @@ export default function GalleryPage() {
                   ) : (
                     <video
                       src={item.src}
+                      type="video/mp4"
                       autoPlay
                       loop
                       muted
@@ -164,6 +165,7 @@ export default function GalleryPage() {
             <div className="aspect-video border border-[rgba(201,168,76,0.2)] overflow-hidden">
               <video
                 src="/videos/gallery.mp4"
+                type="video/mp4"
                 controls
                 preload="none"
                 className="w-full h-full object-cover"

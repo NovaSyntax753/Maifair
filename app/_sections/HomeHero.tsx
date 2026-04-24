@@ -10,6 +10,7 @@ export default function HomeHero() {
       {/* Video background */}
       <video
         src="/videos/hero.mp4"
+        type="video/mp4"
         autoPlay
         muted
         loop

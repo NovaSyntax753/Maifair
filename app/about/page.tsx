@@ -241,6 +241,7 @@ export default function AboutPage() {
             <div className="relative aspect-video border border-[rgba(201,168,76,0.2)] overflow-hidden">
               <video
                 src="/videos/about.mp4"
+                type="video/mp4"
                 controls
                 preload="none"
                 className="w-full h-full object-cover"
