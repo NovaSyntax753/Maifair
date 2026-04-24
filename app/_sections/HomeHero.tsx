@@ -9,7 +9,7 @@ export default function HomeHero() {
     <section className="hero-video-container grain-overlay" id="hero">
       {/* Video background */}
       <video
-        src="/videos/hero.mp4"
+        src="https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027415/lv_0_20260416120827_hmjttx.mp4"
         type="video/mp4"
         autoPlay
         muted

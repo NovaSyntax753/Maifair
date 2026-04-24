@@ -20,15 +20,15 @@ type MediaItem = {
 };
 
 const media: MediaItem[] = [
-  { src: "/videos/gallery_1.mp4", id: "vid-1", alt: "Spa Walkthrough", category: "Interiors", type: "video" },
+  { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027416/lv_0_20260417173618_boaydk.mp4", id: "vid-1", alt: "Spa Walkthrough", category: "Interiors", type: "video" },
   { src: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80", id: "spa-int-1", alt: "Reception foyer", category: "Interiors", type: "image" },
   { src: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&q=80", id: "spa-tr-1", alt: "Swedish massage", category: "Treatments", type: "image" },
-  { src: "/videos/gallery_2.mp4", id: "vid-2", alt: "Relaxing Ambiance", category: "Ambiance", type: "video" },
+  { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027404/lv_0_20260417185056_wdkqaf.mp4", id: "vid-2", alt: "Relaxing Ambiance", category: "Ambiance", type: "video" },
   { src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80", id: "spa-amb-1", alt: "Candlelit corridor", category: "Ambiance", type: "image" },
   { src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80", id: "spa-int-2", alt: "Couple suite", category: "Interiors", type: "image" },
   { src: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80", id: "spa-tr-2", alt: "Facial treatment", category: "Treatments", type: "image" },
   { src: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80", id: "spa-amb-2", alt: "Incense and flowers", category: "Ambiance", type: "image" },
-  { src: "/videos/gallery_3.mp4", id: "vid-3", alt: "Treatment Process", category: "Treatments", type: "video" },
+  { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027391/lv_0_20260417204136_tnyfeh.mp4", id: "vid-3", alt: "Treatment Process", category: "Treatments", type: "video" },
   { src: "https://images.unsplash.com/photo-1529693662653-9d480530a697?w=800&q=80", id: "spa-int-3", alt: "Treatment room", category: "Interiors", type: "image" },
   { src: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80", id: "spa-tr-3", alt: "Hot stone therapy", category: "Treatments", type: "image" },
   { src: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=80", id: "spa-amb-3", alt: "Relaxation pool", category: "Ambiance", type: "image" },
@@ -164,7 +164,7 @@ export default function GalleryPage() {
           <AnimatedSection delay={0.2}>
             <div className="aspect-video border border-[rgba(201,168,76,0.2)] overflow-hidden">
               <video
-                src="/videos/gallery.mp4"
+                src="https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027409/lv_0_20260417155507_cph7ta.mp4"
                 type="video/mp4"
                 controls
                 preload="none"
