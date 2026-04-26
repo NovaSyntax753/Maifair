@@ -7,28 +7,16 @@ import { ChevronDown } from "lucide-react";
 export default function HomeHero() {
   return (
     <section className="hero-video-container grain-overlay" id="hero">
-      {/* Blurred background video to fill space */}
+      {/* Video background */}
       <video
         src="https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027415/lv_0_20260416120827_hmjttx.mp4"
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover blur-3xl opacity-30"
+        className="absolute inset-0 w-full h-full object-cover"
+        poster="https://images.pexels.com/photos/14929575/pexels-photo-14929575.jpeg?auto=compress&cs=tinysrgb&w=1920"
       />
-
-      {/* Main vertical video */}
-      <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <video
-          src="https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027415/lv_0_20260416120827_hmjttx.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full sm:max-w-md object-cover border-x border-[rgba(201,168,76,0.15)] shadow-[0_0_50px_rgba(0,0,0,0.5)]"
-          poster="https://images.pexels.com/photos/14929575/pexels-photo-14929575.jpeg?auto=compress&cs=tinysrgb&w=1920"
-        />
-      </div>
 
       {/* Overlay */}
       <div className="hero-overlay" />
