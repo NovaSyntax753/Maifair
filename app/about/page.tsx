@@ -183,7 +183,7 @@ export default function AboutPage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <div className="relative aspect-[9/16] max-w-sm mx-auto border border-[rgba(201,168,76,0.2)] overflow-hidden">
+            <div className="relative aspect-video border border-[rgba(201,168,76,0.2)] overflow-hidden">
               <video
                 src="https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027398/lv_0_20260417143311_vurz1h.mp4"
                 controls
