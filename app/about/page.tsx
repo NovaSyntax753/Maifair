@@ -30,13 +30,6 @@ const values = [
   },
 ];
 
-const team = [
-  { name: "Priya Raghunathan", role: "Founder & Wellness Director", seed: "team1" },
-  { name: "Arjun Nair", role: "Head Therapist & Trainer", seed: "team2" },
-  { name: "Meera Iyer", role: "Aromatherapy Specialist", seed: "team3" },
-  { name: "Rohan Desai", role: "Client Experience Manager", seed: "team4" },
-];
-
 const awards = [
   "Best Luxury Spa — Mumbai Times 2024",
   "Excellence in Wellness — India Spa Awards",
@@ -52,7 +45,7 @@ export default function AboutPage() {
       <section className="relative h-[60vh] min-h-[400px] flex items-end pb-16 grain-overlay overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1920&q=80"
+            src="https://images.pexels.com/photos/35495081/pexels-photo-35495081.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Maifair spa ambiance"
             fill
             className="object-cover"
@@ -79,7 +72,7 @@ export default function AboutPage() {
             <AnimatedSection direction="left">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80"
+                  src="https://images.pexels.com/photos/6187255/pexels-photo-6187255.jpeg?auto=compress&cs=tinysrgb&w=1920"
                   alt="Maifair founding story"
                   fill
                   className="object-cover"
@@ -174,54 +167,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-section bg-[#0a0a0a] grain-overlay">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimatedSection className="text-center mb-14">
-            <span className="section-label justify-center">Our People</span>
-            <h2
-              className="font-display text-[clamp(2rem,5vw,3.5rem)] font-light text-[#f5f0e8] mt-4"
-              style={{ fontFamily: "var(--font-cormorant)" }}
-            >
-              Meet the <span className="italic text-gradient-gold">Team</span>
-            </h2>
-            <span className="gold-divider mt-4" />
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, i) => (
-              <AnimatedSection key={member.name} delay={i * 0.1} className="group text-center">
-                <div className="relative aspect-[3/4] overflow-hidden mb-5">
-                  <Image
-                    src={[
-                      "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80",
-                      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80",
-                      "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80",
-                      "https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=600&q=80",
-                    ][i]}
-                    alt={member.name}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    sizes="25vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
-                  <div className="absolute inset-0 border border-[rgba(201,168,76,0)] group-hover:border-[rgba(201,168,76,0.4)] transition-all duration-500" />
-                </div>
-                <h3
-                  className="font-display text-xl font-light text-[#f5f0e8]"
-                  style={{ fontFamily: "var(--font-cormorant)" }}
-                >
-                  {member.name}
-                </h3>
-                <span className="gold-divider mt-2 mb-0" />
-                <p className="text-xs text-[#c9a84c] tracking-[0.1em] uppercase font-light mt-2">
-                  {member.role}
-                </p>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Video section */}
       <section className="py-section bg-[#1a1a1a] grain-overlay">
@@ -238,14 +183,13 @@ export default function AboutPage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <div className="relative aspect-video border border-[rgba(201,168,76,0.2)] overflow-hidden">
+            <div className="relative aspect-[9/16] max-w-sm mx-auto border border-[rgba(201,168,76,0.2)] overflow-hidden">
               <video
                 src="https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027398/lv_0_20260417143311_vurz1h.mp4"
-                type="video/mp4"
                 controls
                 preload="none"
                 className="w-full h-full object-cover"
-                poster="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600&q=80"
+                poster="https://images.pexels.com/photos/19150538/pexels-photo-19150538.jpeg?auto=compress&cs=tinysrgb&w=1600"
               />
             </div>
           </AnimatedSection>

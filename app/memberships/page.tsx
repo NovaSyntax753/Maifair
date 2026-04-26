@@ -75,7 +75,7 @@ export default function MembershipsPage() {
       <section className="relative h-[50vh] min-h-[360px] flex items-end pb-16 grain-overlay overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1920&q=80"
+            src="https://images.pexels.com/photos/7365437/pexels-photo-7365437.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Maifair membership"
             fill
             className="object-cover"

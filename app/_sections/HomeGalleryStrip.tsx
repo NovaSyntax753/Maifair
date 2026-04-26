@@ -5,11 +5,11 @@ import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const images = [
-  { src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80", label: "Ambiance" },
-  { src: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=600&q=80", label: "Treatments" },
-  { src: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80", label: "Interiors" },
-  { src: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80", label: "Wellness" },
-  { src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80", label: "Rituals" },
+  { src: "https://images.pexels.com/photos/8789614/pexels-photo-8789614.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Ambiance" },
+  { src: "https://images.pexels.com/photos/6187839/pexels-photo-6187839.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Treatments" },
+  { src: "https://images.pexels.com/photos/35495081/pexels-photo-35495081.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Interiors" },
+  { src: "https://images.pexels.com/photos/14929575/pexels-photo-14929575.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Wellness" },
+  { src: "https://images.pexels.com/photos/6724512/pexels-photo-6724512.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Rituals" },
 ];
 
 export default function HomeGalleryStrip() {

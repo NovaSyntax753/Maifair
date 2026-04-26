@@ -25,7 +25,7 @@ export default function HomeWhyChoose() {
               {/* Main image */}
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1529693662653-9d480530a697?w=800&q=80"
+                  src="https://images.pexels.com/photos/33852650/pexels-photo-33852650.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Maifair spa interior"
                   fill
                   className="object-cover"

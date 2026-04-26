@@ -43,7 +43,7 @@ export default function ContactPage() {
       <section className="relative h-[50vh] min-h-[360px] flex items-end pb-16 grain-overlay overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1920&q=80"
+            src="https://images.pexels.com/photos/6724512/pexels-photo-6724512.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Contact Maifair"
             fill
             className="object-cover"

@@ -16,7 +16,7 @@ export default function BookingPage() {
       <section className="relative h-[45vh] min-h-[320px] flex items-end pb-14 grain-overlay overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&q=80"
+            src="https://images.pexels.com/photos/35149433/pexels-photo-35149433.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Book your Maifair experience"
             fill
             className="object-cover"

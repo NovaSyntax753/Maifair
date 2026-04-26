@@ -8,7 +8,7 @@ const pillars = [
     icon: <Sparkles size={28} className="text-[#c9a84c]" />,
     title: "Rejuvenation",
     description:
-      "Each treatment is meticulously crafted to restore your body's natural vitality. From deep-tissue therapies to restorative facials, emerge feeling truly renewed.",
+      "Each treatment is meticulously crafted to restore your body's natural vitality. From deep-tissue therapies to restorative rituals, emerge feeling truly renewed.",
   },
   {
     icon: <Heart size={28} className="text-[#c9a84c]" />,

@@ -21,20 +21,20 @@ type MediaItem = {
 
 const media: MediaItem[] = [
   { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027416/lv_0_20260417173618_boaydk.mp4", id: "vid-1", alt: "Spa Walkthrough", category: "Interiors", type: "video" },
-  { src: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80", id: "spa-int-1", alt: "Reception foyer", category: "Interiors", type: "image" },
-  { src: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&q=80", id: "spa-tr-1", alt: "Swedish massage", category: "Treatments", type: "image" },
+  { src: "https://images.pexels.com/photos/19150538/pexels-photo-19150538.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-1", alt: "Reception foyer", category: "Interiors", type: "image" },
+  { src: "https://images.pexels.com/photos/6187255/pexels-photo-6187255.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-1", alt: "Swedish massage", category: "Treatments", type: "image" },
   { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027404/lv_0_20260417185056_wdkqaf.mp4", id: "vid-2", alt: "Relaxing Ambiance", category: "Ambiance", type: "video" },
-  { src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80", id: "spa-amb-1", alt: "Candlelit corridor", category: "Ambiance", type: "image" },
-  { src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80", id: "spa-int-2", alt: "Couple suite", category: "Interiors", type: "image" },
-  { src: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80", id: "spa-tr-2", alt: "Facial treatment", category: "Treatments", type: "image" },
-  { src: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80", id: "spa-amb-2", alt: "Incense and flowers", category: "Ambiance", type: "image" },
+  { src: "https://images.pexels.com/photos/8789614/pexels-photo-8789614.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-1", alt: "Candlelit corridor", category: "Ambiance", type: "image" },
+  { src: "https://images.pexels.com/photos/35495081/pexels-photo-35495081.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-2", alt: "Couple suite", category: "Interiors", type: "image" },
+
+  { src: "https://images.pexels.com/photos/6728406/pexels-photo-6728406.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-2", alt: "Incense and flowers", category: "Ambiance", type: "image" },
   { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027391/lv_0_20260417204136_tnyfeh.mp4", id: "vid-3", alt: "Treatment Process", category: "Treatments", type: "video" },
-  { src: "https://images.unsplash.com/photo-1529693662653-9d480530a697?w=800&q=80", id: "spa-int-3", alt: "Treatment room", category: "Interiors", type: "image" },
-  { src: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80", id: "spa-tr-3", alt: "Hot stone therapy", category: "Treatments", type: "image" },
-  { src: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=80", id: "spa-amb-3", alt: "Relaxation pool", category: "Ambiance", type: "image" },
-  { src: "https://images.unsplash.com/photo-1563178406-4cdc2923acbc?w=800&q=80", id: "spa-int-4", alt: "Relaxation lounge", category: "Interiors", type: "image" },
-  { src: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80", id: "spa-tr-4", alt: "Aromatherapy ritual", category: "Treatments", type: "image" },
-  { src: "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=800&q=80", id: "spa-amb-4", alt: "Luxury product shelf", category: "Ambiance", type: "image" },
+  { src: "https://images.pexels.com/photos/33852650/pexels-photo-33852650.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-3", alt: "Treatment room", category: "Interiors", type: "image" },
+  { src: "https://images.pexels.com/photos/37229299/pexels-photo-37229299.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-3", alt: "Hot stone therapy", category: "Treatments", type: "image" },
+  { src: "https://images.pexels.com/photos/14929575/pexels-photo-14929575.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-3", alt: "Relaxation pool", category: "Ambiance", type: "image" },
+  { src: "https://images.pexels.com/photos/31234753/pexels-photo-31234753.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-4", alt: "Relaxation lounge", category: "Interiors", type: "image" },
+  { src: "https://images.pexels.com/photos/6724512/pexels-photo-6724512.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-4", alt: "Aromatherapy ritual", category: "Treatments", type: "image" },
+  { src: "https://images.pexels.com/photos/433626/pexels-photo-433626.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-4", alt: "Luxury product shelf", category: "Ambiance", type: "image" },
 ];
 
 const categories: Category[] = ["All", "Interiors", "Treatments", "Ambiance"];
@@ -57,7 +57,7 @@ export default function GalleryPage() {
       <section className="relative h-[50vh] min-h-[360px] flex items-end pb-16 grain-overlay overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1552693673-1bf958298935?w=1920&q=80"
+            src="https://images.pexels.com/photos/35149433/pexels-photo-35149433.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Maifair gallery"
             fill
             className="object-cover"
@@ -119,7 +119,6 @@ export default function GalleryPage() {
                   ) : (
                     <video
                       src={item.src}
-                      type="video/mp4"
                       autoPlay
                       loop
                       muted
@@ -165,11 +164,10 @@ export default function GalleryPage() {
             <div className="aspect-video border border-[rgba(201,168,76,0.2)] overflow-hidden">
               <video
                 src="https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027409/lv_0_20260417155507_cph7ta.mp4"
-                type="video/mp4"
                 controls
                 preload="none"
                 className="w-full h-full object-cover"
-                poster="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=1600&q=80"
+                poster="https://images.pexels.com/photos/19150538/pexels-photo-19150538.jpeg?auto=compress&cs=tinysrgb&w=1600"
               />
             </div>
           </AnimatedSection>

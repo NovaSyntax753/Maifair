@@ -10,7 +10,7 @@ import HomeCTABanner from "./_sections/HomeCTABanner";
 export const metadata: Metadata = {
   title: "Maifair — The Luxurious Spa | Where Luxury Meets Serenity",
   description:
-    "Experience Nagpur's most exclusive luxury spa. World-class body massages, facials, aromatherapy, and bespoke wellness rituals await you at Maifair.",
+    "Experience Nagpur's most exclusive luxury spa. World-class body massages, aromatherapy, and bespoke wellness rituals await you at Maifair.",
   openGraph: {
     title: "Maifair — The Luxurious Spa",
     description: "Where luxury meets serenity. Book your transcendent spa experience today.",
