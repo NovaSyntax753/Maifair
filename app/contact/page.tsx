@@ -43,7 +43,7 @@ export default function ContactPage() {
       <section className="relative h-[50vh] min-h-[360px] flex items-end pb-16 grain-overlay overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/6724512/pexels-photo-6724512.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="https://images.pexels.com/photos/5240026/pexels-photo-5240026.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Contact Maifair"
             fill
             className="object-cover"
@@ -141,7 +141,8 @@ export default function ContactPage() {
                   <span className="gold-divider gold-divider-left mt-3" />
                 </div>
 
-                <form id="contact-form" className="space-y-5">
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" className="space-y-5">
+                  <input type="hidden" name="access_key" value="1019192d-296d-4e2b-8596-51f018eb6770" />
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-[0.65rem] font-semibold tracking-[0.15em] uppercase text-[#c9a84c] mb-2">
@@ -149,7 +150,9 @@ export default function ContactPage() {
                       </label>
                       <input
                         type="text"
+                        name="name"
                         id="contact-name"
+                        required
                         placeholder="Your name"
                         className="luxury-input w-full"
                       />
@@ -160,7 +163,9 @@ export default function ContactPage() {
                       </label>
                       <input
                         type="tel"
+                        name="phone"
                         id="contact-phone"
+                        required
                         placeholder="Phone number"
                         className="luxury-input w-full"
                       />
@@ -173,7 +178,9 @@ export default function ContactPage() {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       id="contact-email"
+                      required
                       placeholder="your@email.com"
                       className="luxury-input w-full"
                     />
@@ -184,8 +191,10 @@ export default function ContactPage() {
                       Message
                     </label>
                     <textarea
+                      name="message"
                       id="contact-message"
                       rows={5}
+                      required
                       placeholder="How can we help you?"
                       className="luxury-input w-full resize-none"
                     />

@@ -84,23 +84,23 @@ export default function BookingForm() {
     setErrorMsg("");
 
     try {
-      const res = await fetch("/api/enquiry", {
+      const payload = {
+        ...data,
+        access_key: "e49b682f-4a70-4b87-9bb4-4dfc3886f61f"
+      };
+
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(payload),
       });
 
       const json = await res.json();
 
-      if (!res.ok) throw new Error(json.error || "Something went wrong");
+      if (!res.ok || !json.success) throw new Error(json.message || "Something went wrong");
 
       setStatus("success");
       reset();
-
-      // Redirect to WhatsApp after 2 seconds
-      setTimeout(() => {
-        if (json.whatsapp_url) window.open(json.whatsapp_url, "_blank");
-      }, 2000);
     } catch (err: unknown) {
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Unable to submit. Please try again.");
@@ -122,8 +122,7 @@ export default function BookingForm() {
             Booking Received!
           </h3>
           <p className="text-[#d4c9b8] text-sm max-w-sm">
-            We&apos;ll confirm your booking within 2 hours. Redirecting you to WhatsApp for
-            instant confirmation…
+            We&apos;ll confirm your booking within 2 hours via WhatsApp and Email.
           </p>
         </div>
       )}

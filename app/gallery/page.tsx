@@ -22,7 +22,7 @@ type MediaItem = {
 const media: MediaItem[] = [
   { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027416/lv_0_20260417173618_boaydk.mp4", id: "vid-1", alt: "Spa Walkthrough", category: "Interiors", type: "video" },
   { src: "https://images.pexels.com/photos/19150538/pexels-photo-19150538.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-1", alt: "Reception foyer", category: "Interiors", type: "image" },
-  { src: "https://images.pexels.com/photos/6187255/pexels-photo-6187255.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-1", alt: "Swedish massage", category: "Treatments", type: "image" },
+  { src: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-1", alt: "Swedish massage", category: "Treatments", type: "image" },
   { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027404/lv_0_20260417185056_wdkqaf.mp4", id: "vid-2", alt: "Relaxing Ambiance", category: "Ambiance", type: "video" },
   { src: "https://images.pexels.com/photos/8789614/pexels-photo-8789614.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-1", alt: "Candlelit corridor", category: "Ambiance", type: "image" },
   { src: "https://images.pexels.com/photos/35495081/pexels-photo-35495081.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-2", alt: "Couple suite", category: "Interiors", type: "image" },
@@ -30,11 +30,15 @@ const media: MediaItem[] = [
   { src: "https://images.pexels.com/photos/6728406/pexels-photo-6728406.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-2", alt: "Incense and flowers", category: "Ambiance", type: "image" },
   { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027391/lv_0_20260417204136_tnyfeh.mp4", id: "vid-3", alt: "Treatment Process", category: "Treatments", type: "video" },
   { src: "https://images.pexels.com/photos/33852650/pexels-photo-33852650.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-3", alt: "Treatment room", category: "Interiors", type: "image" },
-  { src: "https://images.pexels.com/photos/37229299/pexels-photo-37229299.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-3", alt: "Hot stone therapy", category: "Treatments", type: "image" },
+  { src: "https://images.pexels.com/photos/3738089/pexels-photo-3738089.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-3", alt: "Hot stone therapy", category: "Treatments", type: "image" },
   { src: "https://images.pexels.com/photos/14929575/pexels-photo-14929575.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-3", alt: "Relaxation pool", category: "Ambiance", type: "image" },
-  { src: "https://images.pexels.com/photos/31234753/pexels-photo-31234753.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-4", alt: "Relaxation lounge", category: "Interiors", type: "image" },
-  { src: "https://images.pexels.com/photos/6724512/pexels-photo-6724512.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-4", alt: "Aromatherapy ritual", category: "Treatments", type: "image" },
+  { src: "https://images.pexels.com/photos/5240026/pexels-photo-5240026.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-4", alt: "Relaxation lounge", category: "Interiors", type: "image" },
+  { src: "https://images.pexels.com/photos/5240026/pexels-photo-5240026.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-4", alt: "Aromatherapy ritual", category: "Treatments", type: "image" },
   { src: "https://images.pexels.com/photos/433626/pexels-photo-433626.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-4", alt: "Luxury product shelf", category: "Ambiance", type: "image" },
+  { src: "https://images.pexels.com/photos/6621344/pexels-photo-6621344.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-5", alt: "Luxury hydrotherapy", category: "Interiors", type: "image" },
+  { src: "https://images.pexels.com/photos/3741314/pexels-photo-3741314.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-5", alt: "Deep tissue massage", category: "Treatments", type: "image" },
+  { src: "https://images.pexels.com/photos/35149433/pexels-photo-35149433.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-5", alt: "Spa essentials", category: "Ambiance", type: "image" },
+  { src: "https://images.pexels.com/photos/3951372/pexels-photo-3951372.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-6", alt: "Facial wellness mask", category: "Treatments", type: "image" },
 ];
 
 const categories: Category[] = ["All", "Interiors", "Treatments", "Ambiance"];
@@ -143,36 +147,6 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Video tour */}
-      <section className="py-section bg-[#1a1a1a] grain-overlay">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <AnimatedSection className="mb-10">
-            <span className="section-label justify-center">Virtual Tour</span>
-            <h2
-              className="font-display text-[clamp(2rem,4vw,3rem)] font-light text-[#f5f0e8] mt-4"
-              style={{ fontFamily: "var(--font-cormorant)" }}
-            >
-              Explore <span className="italic text-gradient-gold">Maifair</span>
-            </h2>
-            <span className="gold-divider mt-4" />
-            <p className="mt-4 text-[#d4c9b8] text-sm font-light">
-              Take a virtual tour of our serene sanctuary before you visit.
-            </p>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.2}>
-            <div className="aspect-video border border-[rgba(201,168,76,0.2)] overflow-hidden">
-              <video
-                src="https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027409/lv_0_20260417155507_cph7ta.mp4"
-                controls
-                preload="none"
-                className="w-full h-full object-cover"
-                poster="https://images.pexels.com/photos/19150538/pexels-photo-19150538.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              />
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
 
       {/* Lightbox */}
       <Lightbox

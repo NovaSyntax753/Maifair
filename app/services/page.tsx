@@ -17,7 +17,7 @@ const premiumMassages = [
     description: "Dry massage has gained popularity for its unique approach to relaxation and rejuvenation without the use of oils or lotions.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹4,000",
-    image: "https://images.pexels.com/photos/6187255/pexels-photo-6187255.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Sparkles size={28} />,
@@ -25,7 +25,7 @@ const premiumMassages = [
     description: "Designed for active individuals, focusing on preventing and treating injury, enhancing athletic performance, and reducing muscle fatigue.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹4,000",
-    image: "https://images.pexels.com/photos/6187839/pexels-photo-6187839.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/3741314/pexels-photo-3741314.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Users size={28} />,
@@ -84,7 +84,7 @@ const basicTherapies = [
     description: "Lomi Lomi (or LomiLomi) massage is an integrative massage practice that began in ancient hawaii and is gaining popularity around the world.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹2,500",
-    image: "https://images.pexels.com/photos/7365437/pexels-photo-7365437.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/6621344/pexels-photo-6621344.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Droplets size={28} />,
@@ -92,7 +92,7 @@ const basicTherapies = [
     description: "A holistic healing treatment that uses natural plant extracts to promote health and well-being, enhancing both physical and emotional health.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹3,000",
-    image: "https://images.pexels.com/photos/6724512/pexels-photo-6724512.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/5240026/pexels-photo-5240026.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Heart size={28} />,
@@ -100,7 +100,7 @@ const basicTherapies = [
     description: "Swedish massage involves long, kneading strokes combined with rhythmic tapping strokes and movement of the joints.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹3,500",
-    image: "https://images.pexels.com/photos/6724512/pexels-photo-6724512.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/5240026/pexels-photo-5240026.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Sparkles size={28} />,
@@ -108,7 +108,7 @@ const basicTherapies = [
     description: "Balinese massage is an approach to massage developed in the Indonesian province of Bali, With influence from the traditional medicine systems of India, China, and Southeast Asia.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹3,500",
-    image: "https://images.pexels.com/photos/6724531/pexels-photo-6724531.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/258092/pexels-photo-258092.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Target size={28} />,
@@ -116,7 +116,7 @@ const basicTherapies = [
     description: "Deep tissue massage is a massage technique that's mainly used to treat musculoskeletal issues, such as strains and sports injuries.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹4,000",
-    image: "https://images.pexels.com/photos/37229299/pexels-photo-37229299.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    image: "https://images.pexels.com/photos/3738089/pexels-photo-3738089.jpeg?auto=compress&cs=tinysrgb&w=1920",
   },
 ];
 
@@ -127,7 +127,7 @@ const focusMassages = [
     description: "A targeted massage that relieves tension in the head, neck, and shoulders, perfect for alleviating stress and headaches.",
     duration: "30 / 45 min",
     priceFrom: "₹1,000",
-    image: "https://images.pexels.com/photos/21316248/pexels-photo-21316248.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/3951372/pexels-photo-3951372.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Footprints size={28} />,
@@ -154,7 +154,7 @@ const skinCare = [
     description: "A complete skin care lifestyle treatment including Scrub, Lomi Lomi Massage, and a nourishing Wrap.",
     duration: "90 min",
     priceFrom: "₹4,000",
-    image: "https://images.pexels.com/photos/6187255/pexels-photo-6187255.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Droplets size={28} />,
@@ -162,7 +162,7 @@ const skinCare = [
     description: "Indulge your skin with our chocolate therapy including Deep Tissue Massage and body Polish.",
     duration: "90 min",
     priceFrom: "₹5,000",
-    image: "https://images.pexels.com/photos/6187839/pexels-photo-6187839.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/3741314/pexels-photo-3741314.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Wind size={28} />,

@@ -75,7 +75,7 @@ export default function MembershipsPage() {
       <section className="relative h-[50vh] min-h-[360px] flex items-end pb-16 grain-overlay overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/7365437/pexels-photo-7365437.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="https://images.pexels.com/photos/6621344/pexels-photo-6621344.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Maifair membership"
             fill
             className="object-cover"
@@ -219,40 +219,48 @@ export default function MembershipsPage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <form id="membership-enquiry-form" className="space-y-5">
+            <form action="https://api.web3forms.com/submit" method="POST" id="membership-enquiry-form" className="space-y-5">
+              <input type="hidden" name="access_key" value="a397a39e-88ac-43dd-8af8-32ef443c32c8" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <input
                   type="text"
+                  name="name"
                   id="membership-name"
+                  required
                   placeholder="Full Name"
-                  className="luxury-input"
+                  className="luxury-input w-full"
                 />
                 <input
                   type="tel"
+                  name="phone"
                   id="membership-phone"
+                  required
                   placeholder="Phone Number"
-                  className="luxury-input"
+                  className="luxury-input w-full"
                 />
               </div>
               <input
                 type="email"
+                name="email"
                 id="membership-email"
+                required
                 placeholder="Email Address"
-                className="luxury-input"
+                className="luxury-input w-full"
               />
-              <select id="membership-tier-select" className="luxury-input">
+              <select name="tier" id="membership-tier-select" required className="luxury-input w-full">
                 <option value="">Preferred Membership Tier…</option>
-                <option>Silver</option>
-                <option>Gold</option>
-                <option>Diamond</option>
-                <option>Platinum</option>
-                <option>VIP</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+                <option value="Diamond">Diamond</option>
+                <option value="Platinum">Platinum</option>
+                <option value="VIP">VIP</option>
               </select>
               <textarea
+                name="message"
                 id="membership-message"
                 rows={4}
                 placeholder="Any specific questions or requirements…"
-                className="luxury-input resize-none"
+                className="luxury-input w-full resize-none"
               />
               <button type="submit" id="membership-submit" className="btn-gold w-full py-4">
                 Send Enquiry

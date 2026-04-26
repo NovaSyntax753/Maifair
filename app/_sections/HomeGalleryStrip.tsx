@@ -6,10 +6,10 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const images = [
   { src: "https://images.pexels.com/photos/8789614/pexels-photo-8789614.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Ambiance" },
-  { src: "https://images.pexels.com/photos/6187839/pexels-photo-6187839.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Treatments" },
+  { src: "https://images.pexels.com/photos/3741314/pexels-photo-3741314.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Treatments" },
   { src: "https://images.pexels.com/photos/35495081/pexels-photo-35495081.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Interiors" },
   { src: "https://images.pexels.com/photos/14929575/pexels-photo-14929575.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Wellness" },
-  { src: "https://images.pexels.com/photos/6724512/pexels-photo-6724512.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Rituals" },
+  { src: "https://images.pexels.com/photos/5240026/pexels-photo-5240026.jpeg?auto=compress&cs=tinysrgb&w=600", label: "Rituals" },
 ];
 
 export default function HomeGalleryStrip() {

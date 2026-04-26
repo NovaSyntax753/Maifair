@@ -72,7 +72,7 @@ export default function AboutPage() {
             <AnimatedSection direction="left">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src="https://images.pexels.com/photos/6187255/pexels-photo-6187255.jpeg?auto=compress&cs=tinysrgb&w=1920"
+                  src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
                   alt="Maifair founding story"
                   fill
                   className="object-cover"
@@ -170,29 +170,42 @@ export default function AboutPage() {
 
       {/* Video section */}
       <section className="py-section bg-[#1a1a1a] grain-overlay">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <AnimatedSection className="mb-10">
-            <span className="section-label justify-center">Watch & Discover</span>
-            <h2
-              className="font-display text-[clamp(2rem,5vw,3.5rem)] font-light text-[#f5f0e8] mt-4"
-              style={{ fontFamily: "var(--font-cormorant)" }}
-            >
-              A Window into <span className="italic text-gradient-gold">Maifair</span>
-            </h2>
-            <span className="gold-divider mt-4" />
-          </AnimatedSection>
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Left side: Vertical Video */}
+            <AnimatedSection direction="left">
+              <div className="relative aspect-[9/16] w-full max-w-md mx-auto border border-[rgba(201,168,76,0.2)] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+                <video
+                  src="https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027398/lv_0_20260417143311_vurz1h.mp4"
+                  controls
+                  preload="none"
+                  className="w-full h-full object-cover"
+                  poster="https://images.pexels.com/photos/19150538/pexels-photo-19150538.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                />
+              </div>
+            </AnimatedSection>
 
-          <AnimatedSection delay={0.2}>
-            <div className="relative aspect-video border border-[rgba(201,168,76,0.2)] overflow-hidden">
-              <video
-                src="https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027398/lv_0_20260417143311_vurz1h.mp4"
-                controls
-                preload="none"
-                className="w-full h-full object-cover"
-                poster="https://images.pexels.com/photos/19150538/pexels-photo-19150538.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              />
-            </div>
-          </AnimatedSection>
+            {/* Right side: Text */}
+            <AnimatedSection direction="right" className="text-center md:text-left">
+              <span className="section-label justify-center md:justify-start">Watch & Discover</span>
+              <h2
+                className="font-display text-[clamp(2.5rem,5vw,4rem)] font-light text-[#f5f0e8] mt-4 leading-tight"
+                style={{ fontFamily: "var(--font-cormorant)" }}
+              >
+                A Window into <br className="hidden md:block" />
+                <span className="italic text-gradient-gold">Maifair</span>
+              </h2>
+              <span className="gold-divider mt-6 mx-auto md:mx-0" />
+              <div className="mt-8 space-y-6 text-[#d4c9b8] font-light text-base md:text-lg leading-relaxed">
+                <p>
+                  Step into a world where time slows down and your well-being takes center stage. Our sanctuary is designed to engage all your senses, offering an immersive experience that begins the moment you cross our threshold.
+                </p>
+                <p>
+                  From the soothing acoustic ambiance to the subtle, bespoke fragrances lingering in the air, every detail has been meticulously curated. Watch as our master therapists perform ancient healing rituals, blending tradition with modern luxury to rejuvenate your mind, body, and soul.
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
