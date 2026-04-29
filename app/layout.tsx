@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     description: "Where luxury meets serenity. Experience the finest spa treatments in Nagpur.",
   },
   robots: { index: true, follow: true },
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/logo.png" },
 };
 
 export default function RootLayout({

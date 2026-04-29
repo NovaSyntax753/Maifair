@@ -22,7 +22,7 @@ export default function HomeHero() {
       <div className="hero-overlay" />
 
       {/* Content */}
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -97,7 +97,7 @@ export default function HomeHero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
       >
         <span className="text-[rgba(201,168,76,0.6)] text-[0.6rem] tracking-[0.3em] uppercase">
           Scroll

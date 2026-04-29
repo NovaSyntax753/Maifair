@@ -25,20 +25,28 @@ const media: MediaItem[] = [
   { src: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-1", alt: "Swedish massage", category: "Treatments", type: "image" },
   { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027404/lv_0_20260417185056_wdkqaf.mp4", id: "vid-2", alt: "Relaxing Ambiance", category: "Ambiance", type: "video" },
   { src: "https://images.pexels.com/photos/8789614/pexels-photo-8789614.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-1", alt: "Candlelit corridor", category: "Ambiance", type: "image" },
+  { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027415/lv_0_20260416120827_hmjttx.mp4", id: "vid-4", alt: "Spa Experience", category: "Ambiance", type: "video" },
   { src: "https://images.pexels.com/photos/35495081/pexels-photo-35495081.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-2", alt: "Couple suite", category: "Interiors", type: "image" },
 
   { src: "https://images.pexels.com/photos/6728406/pexels-photo-6728406.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-2", alt: "Incense and flowers", category: "Ambiance", type: "image" },
   { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027391/lv_0_20260417204136_tnyfeh.mp4", id: "vid-3", alt: "Treatment Process", category: "Treatments", type: "video" },
+  { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027398/lv_0_20260417143311_vurz1h.mp4", id: "vid-5", alt: "Signature Treatment", category: "Treatments", type: "video" },
   { src: "https://images.pexels.com/photos/33852650/pexels-photo-33852650.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-3", alt: "Treatment room", category: "Interiors", type: "image" },
-  { src: "https://images.pexels.com/photos/3738089/pexels-photo-3738089.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-3", alt: "Hot stone therapy", category: "Treatments", type: "image" },
+  { src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1920&q=80", id: "spa-tr-3", alt: "Hot stone therapy", category: "Treatments", type: "image" },
   { src: "https://images.pexels.com/photos/14929575/pexels-photo-14929575.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-3", alt: "Relaxation pool", category: "Ambiance", type: "image" },
-  { src: "https://images.pexels.com/photos/5240026/pexels-photo-5240026.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-4", alt: "Relaxation lounge", category: "Interiors", type: "image" },
-  { src: "https://images.pexels.com/photos/5240026/pexels-photo-5240026.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-4", alt: "Aromatherapy ritual", category: "Treatments", type: "image" },
+  { src: "https://res.cloudinary.com/dvda87mbm/video/upload/q_auto,w_1280/v1777027409/lv_0_20260417155507_cph7ta.mp4", id: "vid-6", alt: "Virtual Tour", category: "Interiors", type: "video" },
+  { src: "https://images.unsplash.com/photo-1583416750470-965b2707b355?auto=format&fit=crop&w=1920&q=80", id: "spa-int-4", alt: "Relaxation lounge", category: "Interiors", type: "image" },
+  { src: "https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-4", alt: "Aromatherapy ritual", category: "Treatments", type: "image" },
+  { src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80", id: "spa-amb-6", alt: "Lotus flower relaxation", category: "Ambiance", type: "image" },
   { src: "https://images.pexels.com/photos/433626/pexels-photo-433626.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-4", alt: "Luxury product shelf", category: "Ambiance", type: "image" },
-  { src: "https://images.pexels.com/photos/6621344/pexels-photo-6621344.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-int-5", alt: "Luxury hydrotherapy", category: "Interiors", type: "image" },
-  { src: "https://images.pexels.com/photos/3741314/pexels-photo-3741314.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-5", alt: "Deep tissue massage", category: "Treatments", type: "image" },
+  { src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80", id: "spa-int-5", alt: "Luxury hydrotherapy", category: "Interiors", type: "image" },
+  { src: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1920&q=80", id: "spa-tr-5", alt: "Deep tissue massage", category: "Treatments", type: "image" },
   { src: "https://images.pexels.com/photos/35149433/pexels-photo-35149433.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-amb-5", alt: "Spa essentials", category: "Ambiance", type: "image" },
-  { src: "https://images.pexels.com/photos/3951372/pexels-photo-3951372.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-6", alt: "Facial wellness mask", category: "Treatments", type: "image" },
+  { src: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1920&q=80", id: "spa-tr-6", alt: "Facial wellness mask", category: "Treatments", type: "image" },
+  { src: "https://images.pexels.com/photos/6187255/pexels-photo-6187255.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-7", alt: "Back massage", category: "Treatments", type: "image" },
+  { src: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1920&q=80", id: "spa-tr-8", alt: "Swedish massage therapy", category: "Treatments", type: "image" },
+  { src: "https://images.pexels.com/photos/6724512/pexels-photo-6724512.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-9", alt: "Relaxing massage", category: "Treatments", type: "image" },
+  { src: "https://images.pexels.com/photos/3997983/pexels-photo-3997983.jpeg?auto=compress&cs=tinysrgb&w=1920", id: "spa-tr-10", alt: "Head massage", category: "Treatments", type: "image" },
 ];
 
 const categories: Category[] = ["All", "Interiors", "Treatments", "Ambiance"];
@@ -132,12 +140,6 @@ export default function GalleryPage() {
                     />
                   )}
                   <div className="absolute inset-0 bg-[rgba(10,10,10,0)] group-hover:bg-[rgba(10,10,10,0.45)] transition-all duration-400 flex items-center justify-center">
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
-                      <div className="w-10 h-10 border border-[#c9a84c] flex items-center justify-center mx-auto mb-2">
-                        <span className="text-[#c9a84c] text-xl">+</span>
-                      </div>
-                      <span className="text-[#c9a84c] text-xs tracking-widest uppercase">{item.alt}</span>
-                    </div>
                   </div>
                   <div className="absolute inset-0 border border-[rgba(201,168,76,0)] group-hover:border-[rgba(201,168,76,0.3)] transition-all duration-500" />
                 </div>

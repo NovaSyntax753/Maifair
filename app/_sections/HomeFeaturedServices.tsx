@@ -12,6 +12,7 @@ const featured = [
     description: "Balinese massage is an approach to massage developed in the Indonesian province of Bali, With influence from the traditional medicine systems of India, China, and Southeast Asia.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹3,500",
+    image: "https://images.pexels.com/photos/258092/pexels-photo-258092.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Flame size={28} />,
@@ -19,6 +20,7 @@ const featured = [
     description: "Swedish massage involves long, kneading strokes combined with rhythmic tapping strokes and movement of the joints.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹3,500",
+    image: "https://images.pexels.com/photos/5240026/pexels-photo-5240026.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Users size={28} />,
@@ -26,6 +28,7 @@ const featured = [
     description: "Experience the ultimate indulgence with two therapists working in harmony. A synchronised journey designed to provide double the relaxation.",
     duration: "60 / 90 / 120 min",
     priceFrom: "₹5,000",
+    image: "https://images.pexels.com/photos/8789614/pexels-photo-8789614.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Scissors size={28} />,
@@ -33,6 +36,7 @@ const featured = [
     description: "A deeply purifying and detoxifying Turkish bath ritual that includes rigorous exfoliation, soothing foam massage, and a renewed radiance.",
     duration: "90 min",
     priceFrom: "₹5,500",
+    image: "https://images.pexels.com/photos/35149433/pexels-photo-35149433.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
 ];
 

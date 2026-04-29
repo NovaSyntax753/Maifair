@@ -15,18 +15,21 @@ const values = [
     title: "Pure Ingredients",
     description:
       "We use only ethically sourced, certified organic botanicals and premium ingredient formulations.",
+    image: "https://images.pexels.com/photos/6728406/pexels-photo-6728406.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <Users size={28} className="text-[#c9a84c]" />,
     title: "Expert Therapists",
     description:
       "Every therapist is hand-selected and trained for a minimum of 5 years before joining the Maifair family.",
+    image: "https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     icon: <ShieldCheck size={28} className="text-[#c9a84c]" />,
     title: "Total Discretion",
     description:
       "Your privacy is sacred. Private suites, confidential records, and complete personal respect at all times.",
+    image: "https://images.pexels.com/photos/35495081/pexels-photo-35495081.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
 ];
 
@@ -149,18 +152,29 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((v, i) => (
-              <AnimatedSection key={v.title} delay={i * 0.15} className="luxury-card p-8 text-center flex flex-col items-center gap-5">
-                <div className="w-16 h-16 rounded-full border border-[rgba(201,168,76,0.3)] flex items-center justify-center">
-                  {v.icon}
+              <AnimatedSection key={v.title} delay={i * 0.15} className="luxury-card flex flex-col overflow-hidden text-center group">
+                <div className="relative w-full aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={v.image}
+                    alt={v.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-80" />
                 </div>
-                <h3
-                  className="font-display text-xl font-light text-[#f5f0e8]"
-                  style={{ fontFamily: "var(--font-cormorant)" }}
-                >
-                  {v.title}
-                </h3>
-                <span className="gold-divider" />
-                <p className="text-[#d4c9b8] text-sm font-light leading-relaxed">{v.description}</p>
+                <div className="p-8 flex flex-col items-center gap-5 relative z-10 -mt-12">
+                  <div className="w-16 h-16 rounded-full border border-[#c9a84c] bg-[#0a0a0a] flex items-center justify-center">
+                    {v.icon}
+                  </div>
+                  <h3
+                    className="font-display text-xl font-light text-[#f5f0e8]"
+                    style={{ fontFamily: "var(--font-cormorant)" }}
+                  >
+                    {v.title}
+                  </h3>
+                  <span className="gold-divider" />
+                  <p className="text-[#d4c9b8] text-sm font-light leading-relaxed">{v.description}</p>
+                </div>
               </AnimatedSection>
             ))}
           </div>
